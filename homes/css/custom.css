@@ -151,10 +151,19 @@ header.bg-trainer{
 }
 .section-header-video{
   position: relative;
+}
+.section-header-video:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/video-pattern.png);
 }    
 .bg-video {
   position: absolute;
-  background-image: url(../ictiva/homes/img/video-pattern.png);
 }
 
 /* Recources */
