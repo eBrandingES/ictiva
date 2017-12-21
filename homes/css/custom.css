@@ -149,6 +149,13 @@ header.bg-trainer{
   background-position:center bottom;
   min-height: 90vh;
 }
+.section-header-video{
+  position: relative;
+}    
+.bg-video {
+  position: absolute;
+  background-image: url(../ictiva/homes/img/video-pattern.png);
+}
 
 /* Recources */
 li{
