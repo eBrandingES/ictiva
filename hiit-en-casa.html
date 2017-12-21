@@ -78,6 +78,27 @@
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
+
+    <!-- Temporary navbar container fix 
+    <style>
+    header{
+        margin-top: 0!important;
+    }
+    .bg-gym{
+        min-height: 100vh!important;
+    }
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+    -->
+
 </head>
 
 <body id="page-top">
@@ -117,25 +138,21 @@
             </div>
         </div>
     </div>
-    <header class="bg-gym d-flex align-items-center section-header-video">
-        <video autoplay loop muted class="w-100 hidden-lg-down">
-            <source src="../ictiva/homes/video/fondo_video_ictiva_1080.webm" type="video/webm">
-            <source src="../ictiva/homes/video/fondo_video_ictiva_1080.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="row align-items-center h-100 m-0 w-100 bg-video">
+
+    <header class="bg-gym d-flex align-items-center">
+        <div class="row align-items-center h-100 m-0 w-100">
             <div class="col text-center no-padding">
-                <h1 class="display-1 text-white text-uppercase text-shadow">HIIT en Casa</h1>
+                <h1 class="display-1 text-white text-uppercase">HIIT en Casa</h1>
                 <h2 class="text-white font-weight-bold py-5 px-2">Tus ejercicios HIIT en casa</h2>
 
                 <!-- Button trigger modal -->
-                <!-- <button type="button" class="btn btn-cta play-btn-wrap" data-toggle="modal" data-target="#exampleModalLong">
+                <button type="button" class="btn btn-cta play-btn-wrap" data-toggle="modal" data-target="#exampleModalLong">
                   <img src="../ictiva/homes/img/iconos/play_icon.png" alt="play video" class="img-fluid play-btn">
                   <p class="my-2 text-white text-uppercase btn-text"><small>Mira el video</small></p>
                 </button>
                 
 
-                <!-- Modal
+                <!-- Modal -->
                 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -147,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="hidden-xs-down">
                     <p class="my-5"><a class="btn btn-cta btn-primary btn-xl main-btn" href="https://www.ictiva.com/usuarios/alta/?utm_source=hiit-en-casa&utm_medium=adwords-landing&utm_campaign=hiit">PRUEBA GRATIS</a></p>
                 </div>
@@ -168,7 +185,7 @@
                     <figure class="cl-box">
                         <img class="img-fluid" src="../ictiva/homes/img/fotos/perdida-de-peso.jpg" height="auto" width="100%" alt="">                            
                         <figcaption class="cl-content">
-                            <h2 class="mx-0 mx-sm-4 text-white display-4 text-uppercase text-shadow">Entrenamiento HIIT por niveles</h2>
+                            <h2 class="mx-0 mx-sm-4 text-white display-4 text-uppercase">Entrenamiento HIIT por niveles</h2>
                             <div class="hidden-sm-down text-white">
                                 <p class="lead mt-5 text-bigger">Principiante</p>
                                 <p class="lead text-bigger">Básico</p>
@@ -186,7 +203,7 @@
                     <figure class="cl-box">
                         <img class="img-fluid" src="../ictiva/homes/img/fotos/tonificar.jpg" height="auto" width="100%" alt="">                            
                         <figcaption class="cl-content">
-                            <h2 class="mx-0 mx-sm-4 text-white display-4 text-uppercase text-shadow">Rutina HIIT para Hombres y Mujeres</h2>
+                            <h2 class="mx-0 mx-sm-4 text-white display-4 text-uppercase">Rutina HIIT para Hombres y Mujeres</h2>
                             <h4 class="mx-0 mx-sm-4 text-white text-uppercase hidden-sm-down">Sea cual sea tu objetivo, tenemos sesiones para ti:</h4>
                             <div class="hidden-sm-down text-white">
                                 <p class="lead mt-5 text-bigger">Perder peso</p>
@@ -206,7 +223,7 @@
     <div class="container-fluid py-5 px-sm-5 bg-motitrainer">
         <div class="row py-5 my-0 align-items-center h-100">
             <div class="col-12 offset-md-4 col-md-8 text-white text-right px-md-5">
-              <h3 class="display-3 py-4 text-uppercase text-shadow">Entrena HIIT con nuestros videos de Fitness</h3>
+              <h3 class="display-3 py-4 text-uppercase">Entrena HIIT con nuestros videos de Fitness</h3>
               <p class="lead py-2 text-bigger">La herramienta perfecta para ponerte en forma en casa que te premia por mantenerte activo!</p>
               <p class="py-5">
                     <a class="btn btn-cta btn-primary btn-xl main-btn" href="https://www.ictiva.com/tarifas/?utm_source=hiit-en-casa&utm_medium=adwords-landing&utm_campaign=hiit">PRUEBA GRATIS</a>
@@ -217,7 +234,7 @@
     <div class="container-fluid py-5 px-sm-5 bg-app">
         <div class="row py-0 py-lg-5 my-0 align-items-center h-100">
             <div class="col-12 col-md-10 col-lg-9 text-white px-md-5">
-              <h3 class="display-4 py-4 text-uppercase text-shadow">HIIT cardio para ponerte en forma</h3>
+              <h3 class="display-4 py-4 text-uppercase">HIIT cardio para ponerte en forma</h3>
               <p class="lead py-4 text-bigger">Crea tu objetivo, compártelo, reta a tus amigos y haz de ti tu mejor versión.</p>
               <p>Descárgate la aplicación aquí:</p>
               <a href="https://play.google.com/store/apps/details?id=ictiva.carbonbyte.com.ictiva&?utm_source=hiit-en-casa&utm_medium=adwords-landing&utm_campaign=hiit" target="_blank"><img src="../ictiva/homes/img/logos-footer/google-play-badge.png" class="img-fluid img-logo" alt="android app" width="194" height="75"></a>
