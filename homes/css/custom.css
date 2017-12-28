@@ -164,6 +164,7 @@ header.bg-trainer{
 }    
 .bg-video {
   position: absolute;
+  z-index: 999;
 }
 
 /* Recources */
@@ -210,6 +211,7 @@ h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, p:focus, div:focus, 
 /* Menú Navegación */
 #menu-wrap{
   max-height: 75px;
+  z-index: 9999;
 }
 .navbar-brand img{
   max-width: 120px;
@@ -460,6 +462,12 @@ div.block figcaption p, div.block figcaption a{
 @media (max-width: 575px) {
   .display-1{
     font-size: 4.1rem!important;
+  }
+  .display-1.less{
+    font-size: 2.1rem!important;
+  }
+  h2.less{
+    font-size: 1.6rem;
   }
   .bg-nutrition .display-1{
     font-size: 2.8rem!important; 
