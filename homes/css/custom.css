@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #e57532!important;
 }
 .text-shadow {
-  text-shadow: 0.15rem 0.15rem 0.15rem #333333;
+  text-shadow: 0.1rem 0.1rem 0.1rem #333333;
 }
 
 
@@ -187,7 +187,7 @@ hr {
   font-size: 0.9rem;
   line-height: 1.7rem;
 }
-.bg-wellness a:hover {
+.bg-wellness a:hover, .bg-aerobicos a:hover {
   text-decoration: none!important;
 }
 .navbar-toggler-left{
@@ -352,6 +352,27 @@ div.block figcaption p, div.block figcaption a{
   background-size: cover;
   background-position: center;
 }
+
+.bg-aerobicos .rc-bg{
+  background: url(../img/img-aerobicos/aerobic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-aerobicos .lw-bg{
+  background: url(../img/img-aerobicos/steps.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-aerobicos .tu-bg{
+  background: url(../img/img-aerobicos/combat.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-aerobicos .sp-bg{
+  background: url(../img/img-aerobicos/totalbody.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .cl-box, .cl-content{
   position: relative;
 }
@@ -406,8 +427,6 @@ div.block figcaption p, div.block figcaption a{
   min-height: 90vh;
 }
 
-
-
 .bg-motinutrition{
   background: url(../img/img-nutrition/dietas.jpg);
   background-size: cover;
@@ -418,6 +437,13 @@ div.block figcaption p, div.block figcaption a{
 
 .bg-motisalud{
   background: url(../img/img-wellness/motivator.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+.bg-motiaerobicos{
+  background: url(../img/img-aerobicos/motiaerobicos.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
