@@ -492,11 +492,17 @@ div.block figcaption p, div.block figcaption a{
   .display-1.less{
     font-size: 2.1rem!important;
   }
+  .display-1.less2{
+    font-size: 3.6rem!important;
+  }
+  .display-1.less3{
+    font-size: 3.2rem!important;
+  }
   h2.less{
     font-size: 1.6rem;
   }
   .bg-nutrition .display-1{
-    font-size: 2.8rem!important; 
+    font-size: 2.5rem!important; 
   }
   .bg-trainer h1.display-1{
     font-size: 3.4rem!important;
