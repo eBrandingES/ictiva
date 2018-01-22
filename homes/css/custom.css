@@ -187,7 +187,7 @@ hr {
   font-size: 0.9rem;
   line-height: 1.7rem;
 }
-.bg-wellness a:hover, .bg-aerobicos a:hover {
+.bg-wellness a:hover, .bg-aerobicos a:hover, .bg-ejercicios a:hover {
   text-decoration: none!important;
 }
 .navbar-toggler-left{
@@ -373,6 +373,46 @@ div.block figcaption p, div.block figcaption a{
   background-size: cover;
   background-position: center;
 }
+.bg-ejercicios .pi-bg{
+  background: url(../img/img-ejercicios/piernas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .gu-bg{
+  background: url(../img/img-ejercicios/gluteos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .br-bg{
+  background: url(../img/img-ejercicios/brazos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .ab-bg{
+  background: url(../img/img-ejercicios/abdomen.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .pe-bg{
+  background: url(../img/img-ejercicios/pecho.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .es-bg{
+  background: url(../img/img-ejercicios/espalda.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .ho-bg{
+  background: url(../img/img-ejercicios/hombros.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-ejercicios .gl-bg{
+  background: url(../img/img-ejercicios/global.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .cl-box, .cl-content{
   position: relative;
 }
@@ -498,6 +538,9 @@ div.block figcaption p, div.block figcaption a{
   .display-1.less3{
     font-size: 3.2rem!important;
   }
+  .promo .h1{
+    font-size: 2rem;
+  }
   h2.less{
     font-size: 1.6rem;
   }
@@ -586,6 +629,9 @@ div.block figcaption p, div.block figcaption a{
       -moz-transition: opacity .5s ease-out;
       -webkit-transition: opacity .5s ease-out;
       -o-transition: opacity .5s ease-out;
+  }
+  .bg-app,.bg-app2, .bg-app3, .bg-app4{
+    display: none;
   }
 }
 
