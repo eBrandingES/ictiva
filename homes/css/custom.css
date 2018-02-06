@@ -149,6 +149,12 @@ header.bg-trainer{
   background-position:center bottom;
   min-height: 90vh;
 }
+header.bg-pilates{
+  background: url(../img/img-pilates/pilates-home.jpg);
+  background-size: cover;
+  background-position:center bottom;
+  min-height: 90vh;
+}
 .section-header-video{
   position: relative;
 }
@@ -161,6 +167,7 @@ header.bg-trainer{
   right: 0;
   margin: auto;
   background-image: url(../img/video-pattern.png);
+  opacity: 0.6;
 }    
 .bg-video {
   position: absolute;
