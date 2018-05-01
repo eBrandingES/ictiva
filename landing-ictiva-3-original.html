@@ -82,6 +82,18 @@
 
     <!-- Temporary navbar container fix -->
     <style>
+    header{
+        margin-top: 30px;
+    }
+    header.bg-landing{        
+        background-image: url(homes/img/img-landing/yoga_portada-movil.jpg);
+        background-position: top center;
+        background-size: cover;
+        min-height: 90vh;
+    }
+    header.bg-landing:before{
+        min-height: 90vh;
+    }
     .btn > a:hover{
         text-decoration: none!important;
     }
@@ -100,12 +112,18 @@
     }
     .pl-6{
         padding-left: 4.5rem;
+    }    
+    .pr-6{
+        padding-right: 4.5rem;
     }
     .bg-primary-light {
       background: rgba(247,170,69,1) !important;
     }
     .bg-grey-2{
         background-color: #dfdfdb;
+    }
+    .w-90{
+        width: 90%!important;
     }
     li.ls{
         list-style-type: none;
@@ -123,16 +141,10 @@
         nav > .container {
             width: 100%;
         }
+    }
+    @media (min-width: 1281px) {
         .text-medium{
             font-size: 1.25rem;
-        }
-    }
-    @media (max-width: 767px){
-        header.bg-landing{        
-            background-image: url(homes/img/img-landing/yoga_portada-movil.jpg);
-            background-position: top center;
-            background-size: cover;
-            min-height: 90vh;
         }
     }
     </style>
@@ -201,18 +213,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-
-    <header class="bg-landing pt-4 mt-5 d-flex justify-content-center align-items-center section-header-video">
-        <div class="container bg-video">
-            <div class="row mx-0 mb-0 mt-5">
-                <div class="col-12 col-lg-6 py-3">
+    <header class="bg-landing d-flex align-items-center justify-content-center section-header-video">
+        <div class="row align-items-center m-0 w-100 bg-video mb-0 mt-5 px-5">
+                <div class="col-12 col-md-6 col-lg-7 py-3">
                     <h1 class="text-white text-uppercase display-4 pb-lg-3">Hacer Yoga en casa</h1>
                     <p class="text-white h5 pb-lg-4">Aprende a realizar ejercicios de yoga en casa correctamente con nuestras videosesiones.</p>
                     <h2 class="text-primary text-uppercase text-bigger pb-lg-4">Yoga online con ictiva</h2>
                     <p class="text-white text-medium mb-5">Aprende a hacer Yoga en casa, la disciplina milenaria por excelencia que armoniza el cuerpo y la mente. Con ictiva disfrutarás de la práctica del Yoga online y te convertirás en un auténtico Yogui.</p>
                     <p class="py-4 btn bg-primary rounded-0"><a data-scroll href="https://www.ictiva.com/usuarios/alta/?home=salud" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">Quiero entrenar gratis</a></p>
                 </div>
-                <div class="col-12 col-md-6 py-3 pl-6 d-none d-md-block hidden-md-down">
+                <div class="col-12 col-md-5 py-3 d-none d-sm-block hidden-sm-down">
                     <div class="widget-home float-right">
                         <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Beneficios de practicar Yoga:</p>
                         <ul class="bg-lightgrey m-auto py-3 pl-4">
@@ -231,15 +241,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </div>
-        <video autoplay loop muted class="w-100 hidden-sm-down" poster="/img/slide-home/video-main-placeholder.png">
+        <video autoplay loop muted class="w-100 hidden-lg-down">
             <source src="https://www.ictiva.com/homes/video/yoga_video.mp4" type="video/mp4">
             <source src="https://www.ictiva.com/homes/video/yoga_video.webm" type="video/webm">
             <embed src="https://www.ictiva.com/homes/video/yoga_video.mp4" type="application/x-shockwave-flash" width="100%" height="570" allowscriptaccess="always" allowfullscreen="true" autoplay="true" showcontrols="0">
+            Your browser does not support HTML5 video.
         </video>
     </header>
     <section class="container-fluid">
-        <div class="row">
-            <div class="col-12 py-3 px-3 d-md-none hidden-sm-up">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-8 py-3 px-3 d-md-none hidden-md-up">
                 <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Los ejercicios de Yoga tienen mucho que ofrecerte:</p>
                 <ul class="bg-lightgrey m-auto py-3 pl-4">
                     <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Logra una buena condición física.</li>
@@ -255,30 +266,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
     <section class="no-padding bg-faded">
-        <div class="container py-0">
+        <div class="container-fluid px-5 py-0">
             <div class="row px-5 py-4">
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center mb-3 mb-md-0">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/localizacion_icon.png" class="sr-icons mb-3" alt="Donde quieras" height="80px" width="auto">
                         <h4 class="h4">DONDE QUIERAS</h3>
                         <!-- <p class="text-muted">Acceso ilimitado donde quieras y a la hora que quieras.</p> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center mb-3 mb-md-0">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/reloj_icon.png" class="sr-icons mb-3" alt="Cuando quieras" height="80px" width="auto">
                         <h4 class="h4">CUANDO QUIERAS</h3>
                         <!-- <p class="text-muted">Clases dirigidas con ejercicios de 21 disciplinas diferentes.</p> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center mb-3 mb-md-0">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/play_icon.png" class="sr-icons mb-3" alt="Las veces que quieras" height="80px" width="auto">
                         <h4 class="h4">LAS VECES QUE QUIERAS</h3>
                         <!-- <p class="text-muted">5 niveles de dificultad para adaptarse a tu forma física.</p> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center mb-3 mb-md-0">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/infinito_icon.png" class="sr-icons mb-3" alt="acceso ilimitado" height="80px" width="auto">
                         <h4 class="h4">ACCESO ILIMITADO</h3>
