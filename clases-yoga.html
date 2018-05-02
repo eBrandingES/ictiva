@@ -82,18 +82,6 @@
 
     <!-- Temporary navbar container fix -->
     <style>
-    header{
-        margin-top: 30px;
-    }
-    header.bg-landing{        
-        background-image: url(/homes/img/img-landing/yoga_portada-movil.jpg);
-        background-position: top center;
-        background-size: cover;
-        min-height: 90vh;
-    }
-    header.bg-landing:before{
-        min-height: 90vh;
-    }
     .btn > a:hover{
         text-decoration: none!important;
     }
@@ -122,9 +110,6 @@
     .bg-grey-2{
         background-color: #dfdfdb;
     }
-    .w-90{
-        width: 90%!important;
-    }
     li.ls{
         list-style-type: none;
     }
@@ -142,9 +127,63 @@
             width: 100%;
         }
     }
+    @media (max-width: 767px){
+        header.bg-landing{        
+            background-image: url(/homes/img/img-landing/yoga_portada-movil.jpg);
+            background-position: top center;
+            background-size: cover;
+            min-height: 90vh;
+        }
+        header.bg-landing:before{
+            min-height: 90vh;
+        }
+    }
     @media (min-width: 1281px) {
         .text-medium{
             font-size: 1.25rem;
+        }
+    }
+    @media (min-width: 1680px){
+        .container {
+            width: 1620px;
+            max-width: 100%;
+        }
+        .extra-lg h1.display-4{
+            font-size: 4rem;
+            padding-bottom: 2.2rem!important;
+        }
+        .extra-lg p, .extra-lg a{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+        .extra-lg h2{
+            font-size: 2rem;
+        }
+        /*.extra-lg a.btn-scroll{
+            font-size: 1.1rem;
+        }*/
+        .extra-lg li{
+            font-size: 1.6rem;
+        }
+        .widget-home{
+            width: 475px;
+            margin-right: 3rem;
+        }
+        .widget-home p.px-4,.widget-home ul.pl-4{
+            padding-left: 2.5rem!important;
+        }
+        .widget-home p.py-3{
+            padding-top: 1.5rem!important;
+            padding-bottom:  1.5rem!important;
+        }
+        .line-height-2{
+            line-height: 4rem;
+        }
+        .btn-scroll .pt-2{
+            padding-top: 6rem!important;
+        }
+        .btn-scroll a{
+            font-size: 1.3rem;
         }
     }
     </style>
@@ -170,7 +209,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="navbar-bg-icon"></span>
                 </button>
                 <div class="container pl-lg-0">
-                    <a class="navbar-brand ml-5 ml-lg-0" href="#page-top">
+                    <a class="navbar-brand ml-5 ml-lg-3" href="#page-top">
                         <img src="https://www.ictiva.com/img/logo_ictiva.svg" width="auto" height="auto" alt="ictiva-logo" class="img-fluid">
                     </a>
                     <div class="collapse navbar-collapse" id="navbarExample">
@@ -213,16 +252,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <header class="bg-landing d-flex align-items-center justify-content-center section-header-video">
-        <div class="row align-items-center m-0 w-100 bg-video mb-0 mt-5 px-5">
-                <div class="col-12 col-md-6 col-lg-7 py-3">
+
+    <header class="bg-landing pt-4 mt-5 d-flex justify-content-center align-items-center section-header-video">
+        <div class="container bg-video mx-0 d-flex justify-content-center">
+            <div class="row mb-0 mt-5 px-5">
+                <div class="col-12 col-lg-7 extra-lg py-3">
                     <h1 class="text-white text-uppercase display-4 pb-lg-3">Clases de Yoga</h1>
                     <p class="text-white h5 pb-lg-4">Iníciate en el mundo del Yoga con nuestras clases virtuales. Cuida tu cuerpo y tu mente desde hoy mismo.</p>
                     <h2 class="text-primary text-uppercase text-bigger pb-lg-4">Clases de Yoga online donde y cuando quieras</h2>
                     <p class="text-white text-medium mb-5">Con nuestras clases de Yoga en casa de ictiva tu gimnasio online, aprenderás a realizar desde los ejercicios más básicos para principiantes, a asanas más avanzadas para aquellos que ya conocen esta disciplina milenaria.</p>
                     <p class="py-4 btn bg-primary rounded-0"><a data-scroll href="https://www.ictiva.com/usuarios/alta/?home=salud" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">Quiero entrenar gratis</a></p>
                 </div>
-                <div class="col-12 col-md-5 py-3 d-none d-sm-block hidden-sm-down">
+                <div class="col-12 col-md-5 py-3 extra-lg d-none d-md-block hidden-md-down">
                     <div class="widget-home float-right">
                         <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Todo son beneficios:</p>
                         <ul class="bg-lightgrey m-auto py-3 pl-4">
@@ -236,22 +277,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </ul>                
                     </div>
                 </div>
-                <div class="col-12 pt-2 text-center">
+                <div class="col-12 btn-scroll pt-2 text-center">
                     <p class="py-4 btn"><a data-scroll href="#pagetwo" class="text-uppercase text-white text-center m-0 py-4">Descubre la sala de Yoga<br><i class="fas fa-chevron-down text-white mt-2"></a></i></p>
                 </div>
             </div>
         </div>
-        <video autoplay loop muted class="w-100 hidden-lg-down">
+        <video autoplay loop muted class="w-100 hidden-sm-down" poster="/img/slide-home/video-main-placeholder.png">
             <source src="https://www.ictiva.com/homes/video/yoga_video.mp4" type="video/mp4">
             <source src="https://www.ictiva.com/homes/video/yoga_video.webm" type="video/webm">
             <embed src="https://www.ictiva.com/homes/video/yoga_video.mp4" type="application/x-shockwave-flash" width="100%" height="570" allowscriptaccess="always" allowfullscreen="true" autoplay="true" showcontrols="0">
-            Your browser does not support HTML5 video.
         </video>
     </header>
     <section class="container-fluid">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-8 py-3 px-3 d-md-none hidden-md-up">
-                <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Los ejercicios de Yoga tienen mucho que ofrecerte:</p>
+        <div class="row">
+            <div class="col-12 py-3 px-3 extra-lg d-md-none hidden-sm-up">
+                <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Todo son beneficios:</p>
                 <ul class="bg-lightgrey m-auto py-3 pl-4">
                     <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Logra una buena condición física.</li>
                     <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Pierde peso y estiliza tu figura.</li>
