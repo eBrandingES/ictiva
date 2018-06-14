@@ -50,10 +50,13 @@ header h3.lead {
 .text-primary{
   color: #e57532 !important;
 }
+a.text-primary:hover, a.text-primary:focus{
+  color: #e57532 !important;
+}
 .text-dark{
   color: #333333;
 }
-.text-dark:hover{
+a.text-dark:hover, a.text-dark:focus{
   color: #333333;
 }
 .display-3, .display-4{
@@ -116,6 +119,9 @@ li.bg-darkgrey:hover{
 .bg-lightgrey{
   background: #dfdfdb; 
 }
+.bg-lightgrey2{
+  background: #dfdfdb; 
+}
 .bg-lightgrey:hover{
   background: #c7c7c7; 
 }
@@ -124,6 +130,11 @@ li.bg-darkgrey:hover{
 }
 .bg-blue:hover{
   background: #2699d6;
+}
+.bg-manzanas{
+  background: url(../img/img-newindex/manzanas.jpg);
+  background-size: cover;
+  background-position: center;
 }
 header.bg-gym{
   background: url(../img/fotos/home.jpg);
@@ -339,6 +350,27 @@ div.block figcaption p, div.block figcaption a{
   background-position: center;
 }
 
+.efe-bg{
+  background: url(../img/img-newindex/efectivo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.ada-bg{
+  background: url(../img/img-newindex/adaptado.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.don-bg{
+  background: url(../img/img-newindex/dondeycuandoquieras.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.mot-bg{
+  background: url(../img/img-newindex/motivacional.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-wellness .rc-bg{
   background: url(../img/img-wellness/yoga.jpg);
   background-size: cover;
@@ -524,6 +556,14 @@ div.block figcaption p, div.block figcaption a{
 
 .bg-app4{
   background: url(../img/img-wellness/app.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.bg-appnew{
+  background: url(../img/img-newindex/app-ictiva.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
