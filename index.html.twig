@@ -78,6 +78,31 @@
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
+    <!--  Cookies Policy -->
+    <link rel="stylesheet" type="text/css" href="/homes/cookieconsent/cookieconsent.min.css" />
+    <script src="/homes/cookieconsent/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#3c404d",
+          "text": "#f6f6f6"
+        },
+        "button": {
+          "background": "#e57532",
+          "text": "#f6f6f6"
+        }
+      },
+      "position": "top",
+      "content": {
+        "message": "Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Puedes modificar esta opción en tu navegador, por tanto si continuas navegando sin modificarlo, consideramos que aceptas su uso.",
+        "dismiss": "Acepto",
+        "link": "¿Quieres ver nuestra política de cookies? ",
+        "href": "https://www.ictiva.com/condiciones-de-uso/"
+      }
+    })});
+    </script>
 
     <!-- Temporary navbar container fix -->
     <style>
