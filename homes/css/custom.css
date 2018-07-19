@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0.1rem 0.1rem 0.1rem #333333;
 }
 
+.text-shadow2{
+  text-shadow: 1px 1px 1px #2B2B2B;
+}
 
 /* Headings */   
 h1.display-1{
