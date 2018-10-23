@@ -169,6 +169,12 @@ header.bg-pilates{
   background-position:center bottom;
   min-height: 90vh;
 }
+header.bg-hipopresivos{
+  background: url(../img/img-hipopresivos/hipopresivos-home.jpg);
+  background-size: cover;
+  background-position:center bottom;
+  min-height: 90vh;
+}
 .section-header-video{
   position: relative;
 }
@@ -208,7 +214,7 @@ hr {
   font-size: 0.9rem;
   line-height: 1.7rem;
 }
-.bg-wellness a:hover, .bg-aerobicos a:hover, .bg-ejercicios a:hover {
+.bg-wellness a:hover, .bg-aerobicos a:hover, .bg-ejercicios a:hover{
   text-decoration: none!important;
 }
 .navbar-toggler-left{
@@ -394,7 +400,11 @@ div.block figcaption p, div.block figcaption a{
   background-size: cover;
   background-position: center;
 }
-
+.bg-wellness .hp-bg{
+  background: url(../img/img-pilates/pilates4.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .bg-aerobicos .rc-bg{
   background: url(../img/img-aerobicos/aerobic.jpg);
   background-size: cover;
