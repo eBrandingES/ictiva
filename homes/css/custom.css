@@ -690,9 +690,6 @@ div.block figcaption p, div.block figcaption a{
       -webkit-transition: opacity .5s ease-out;
       -o-transition: opacity .5s ease-out;
   }
-  .bg-app,.bg-app2, .bg-app3, .bg-app4{
-    display: none;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
