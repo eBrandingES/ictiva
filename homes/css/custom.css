@@ -601,6 +601,9 @@ div.block figcaption p, div.block figcaption a{
   .promo .h1{
     font-size: 2rem;
   }
+  .font-less{
+    font-size: 1.2em;
+  }
   h2.less{
     font-size: 1.6rem;
   }
