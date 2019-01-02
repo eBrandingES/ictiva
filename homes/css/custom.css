@@ -541,6 +541,13 @@ div.block figcaption p, div.block figcaption a{
   background-repeat: no-repeat;
   min-height: 90vh;
 }
+.bg-wellnees-landing{
+  background: url(../img/img-landing/wellness-mujer-landing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
 
 /* App */
 
