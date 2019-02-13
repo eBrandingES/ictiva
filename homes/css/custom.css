@@ -139,6 +139,11 @@ li.bg-darkgrey:hover{
   background-size: cover;
   background-position: center;
 }
+.bg-verduras{
+  background: url(../img/img-ictiva-home/fondo-verduras.jpg);
+  background-size: cover;
+  background-position: center;
+}
 header.bg-gym{
   background: url(../img/fotos/home.jpg);
   background-size: cover;
@@ -379,7 +384,26 @@ div.block figcaption p, div.block figcaption a{
   background-size: cover;
   background-position: center;
 }
-
+.efec-bg{
+  background: url(../img/img-ictiva-home/efectivo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.adap-bg{
+  background: url(../img/img-ictiva-home/adaptado.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.dond-bg{
+  background: url(../img/img-ictiva-home/dondeycuandoquieras.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.moti-bg{
+  background: url(../img/img-ictiva-home/motivacional.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .bg-wellness .rc-bg{
   background: url(../img/img-wellness/yoga.jpg);
   background-size: cover;
