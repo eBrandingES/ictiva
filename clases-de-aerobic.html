@@ -73,7 +73,7 @@
     <!-- Plugin CSS -->
     <link href="homes/css/magnific-popup.min.css" rel="stylesheet">
 
-    <link href="homes/css/custom.min.css" rel="stylesheet">
+    <link href="homes/src/css/styles.css" rel="stylesheet">
 
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -99,10 +99,10 @@
     header.bg-landing:before{
         min-height: 90vh;
     }
-    header.bg-landing>div{
+    /* header.bg-landing>div{
         width: 80%;
         margin-left: 10%;
-    }
+    } */
     .video-section{
         margin-top: -10rem;
     }
@@ -194,18 +194,18 @@
         .line-height-2{
             line-height: 4rem;
         }
-        .btn-scroll .pt-2{
+        /* .btn-scroll .pt-2{
             padding-top: 6rem!important;
         }
         .btn-scroll a{
             font-size: 1.3rem;
-        }
+        } */
     }
     </style>
 
 </head>
 
-<body id="page-top">
+<body id="landing">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRF3HL"
@@ -219,132 +219,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div id="menu-wrap" class="container-fluid bg-white fixed-top">
         <div class="row my-2">
-            <nav class="navbar navbar-toggleable-md navbar-light col-8 bg-white">
-                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-bg-icon"></span>
-                </button>
-                <div class="container pl-lg-0">
-                    <a class="navbar-brand ml-5 ml-lg-3" href="#page-top">
-                        <img src="https://www.ictiva.com/img/logo_ictiva.svg" width="auto" height="auto" alt="ictiva-logo" class="img-fluid">
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarExample">
-                        <ul class="navbar-nav m-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link px-2 text-uppercase mt-3 mt-sm-0" href="/">Gimnasio <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item px-2 text-uppercase">
-                                <a class="nav-link" href="/salud">Salud</a>
-                            </li>
-                            <li class="nav-item px-2 text-uppercase">
-                                <a class="nav-link" href="/entrenador">Entrenador Virtual</a>
-                            </li>
-                            <li class="nav-item px-2 text-uppercase">
-                                <a class="nav-link" href="/nutricion">Nutrición</a>
-                            </li>
-                            <li class="nav-item px-2 text-uppercase">
-                                <a class="nav-link text-blue" href="http://www.ictivashop.com/">Shop</a>
-                            </li>
-                            <li class="nav-item px-2 text-uppercase hidden-lg-up">
-                                <a class="nav-link text-primary" href="https://www.ictiva.com/tarifas/?utm_source=ictiva&utm_medium=btn&utm_campaign=menu-btn">Tarifas</a>
-                            </li>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+                <div class="container-fluid">
+                    <a class="navbar-brand js-scroll-trigger" href="https://www.ictiva.com/"><img src="https://www.ictiva.com/homes/src/assets/img/logo-ictiva-new.svg" width="120" height="auto" class="img-fluid" alt="logo ictiva"></a>
+                    <a class="btn btn-light btn-nav d-block d-lg-none" href="https://www.ictiva.com/tarifas/?utm_source=blog&utm_medium=referral">Tarifas</a>
+                    <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+                    <div class="collapse navbar-collapse d-none d-lg-block" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto d-flex align-items-center">
+                            <li class="nav-item"><a class="btn btn-light btn-nav" href="https://www.ictiva.com/tarifas/?utm_source=blog&utm_medium=referral">Tarifas</a></li>
+                            <li class="nav-item px-3"><a class="btn btn-primary btn-nav" href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral">Prueba Gratis</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://www.ictiva.com/usuarios/login/">Inicia sesión</a></li> -->
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="col-4 no-padding bg-white">
-                <ul class="row justify-content-end mt-3 mt-sm-1 mb-0 mr-1 mr-md-2 p-0 h-100 align-items-start menu-mob">
-                    <li class="bg-grey-2 py-0 px-1 px-sm-4 py-sm-2 p-xl-2">
-                        <a class="text-dark btn" href="https://www.ictiva.com/tarifas/?home=gimnasio">TARIFAS</a>
-                    </li>
-                    <li class="bg-primary p-0 py-sm-2 p-xl-2 hidden-md-down">
-                        <a class="text-white btn text-uppercase" href="https://www.ictiva.com/tarifas/">AHORA 3 MESES x 15€</a>
-                    </li>
-                    <!-- <li class="bg-darkgrey p-0 py-sm-2 p-xl-2">
-                        <a class="text-white btn text-uppercase" href="https://www.ictiva.com/usuarios/login/">Acceso Usuarios</a>
-                    </li> -->
-                </ul>
-            </div>
         </div>
     </div>
 
 
     <header class="bg-landing pt-4 mt-5 align-items-center section-header-video">
-        <div class="container bg-video d-block d-sm-flex justify-content-center mt-5">
-            <div class="row mb-0 mt-5 px-4">
-                <div class="col-12 col-lg-7 extra-lg py-3">
+        <div class="container bg-video d-flex align-items-center">
+            <div class="row mb-0 mt-4 px-4 d-block d-sm-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-7 col-xl-6 py-4">
                     <h1 class="text-white text-uppercase display-4 pb-lg-3">CLASES DE AERÓBIC</h1>
                     <p class="text-white h5 pb-lg-4">Gana resistencia, coordinación, flexibilidad a la vez que tonificas tu cuerpo.</p>
                     <h2 class="text-primary text-uppercase text-bigger pb-lg-4">CLASES DE AERÓBIC PARA PRINCIPIANTES</h2>
                     <p class="text-white text-medium mb-5">Quieres ponerte en forma al ritmo de la música? Ahora puedes hacerlo con nuestras clases de aeróbic en casa.</p>
-                    <p class="py-4 btn bg-primary rounded-0"><a data-scroll href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="py-4 btn btn-primary rounded-xl"><a data-scroll href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
-                <div class="col-12 col-md-5 py-3 extra-lg d-none d-md-block hidden-md-down">
-                    <div class="widget-home float-right">
-                        <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Beneficios del Aeróbic:</p>
-                        <ul class="bg-lightgrey m-auto py-3 pl-4">
-                            <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Ayuda a adelgazar.</li>
-                            <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Reduce la celulitis.</li>
-                            <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Elimina la grasa corporal.</li>
-                            <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Estiliza tu figura.</li>
-                            <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Mayor capacidad pulmonar.</li>
-                            <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Aumenta la resistencia.</li>
-                            <li class="line-height-2 ls mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Tonifica tu musculatura.</li>
-                        </ul>                
-                    </div>
+                <div class="col-12 col-lg-5 col-xl-4 py-4 d-none d-md-block">
+                        <p class="bg-dark text-white text-uppercase font-weight-bold h5 m-0 py-4 px-4 rounded-top-lg">Beneficios del Aeróbic:</p>
+                        <ul class="bg-light m-auto py-3 pl-4 rounded-bottom-lg">
+                            <li class="list-unstyled h5 mb-3"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Ayuda a adelgazar.</li>
+                            <li class="list-unstyled h5 mb-3"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Reduce la celulitis.</li>
+                            <li class="list-unstyled h5 mb-3"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Elimina la grasa corporal.</li>
+                            <li class="list-unstyled h5 mb-3"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Estiliza tu figura.</li>
+                            <li class="list-unstyled h5 mb-3"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Mayor capacidad pulmonar.</li>
+                            <li class="list-unstyled h5 mb-3"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Aumenta la resistencia.</li>
+                            <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Tonifica tu musculatura.</li>
+                        </ul>
                 </div>
-                <div class="col-12 btn-scroll pt-2 text-center d-none d-sm-block">
+                <div class="col-12 btn-scroll pt-2 pb-3 text-center d-none d-sm-block">
                     <p class="py-4 btn"><a data-scroll href="#pagetwo" class="text-uppercase text-white text-center m-0 py-4">Descubre la sala<br><i class="fas fa-chevron-down text-white mt-2"></a></i></p>
                 </div>
             </div>
         </div>
         <!-- <video autoplay loop muted class="w-100 hidden-sm-down" poster="/img/slide-home/video-main-placeholder.png">
-            <source src="https://www.ictiva.com/homes/video/yoga_video.mp4" type="video/mp4">
-            <source src="https://www.ictiva.com/homes/video/yoga_video.webm" type="video/webm">
-            <embed src="https://www.ictiva.com/homes/video/yoga_video.mp4" type="application/x-shockwave-flash" width="100%" height="570" allowscriptaccess="always" allowfullscreen="true" autoplay="true" showcontrols="0">
+            <source src="https://www.ictiva.comhomes/video/yoga_video.mp4" type="video/mp4">
+            <source src="https://www.ictiva.comhomes/video/yoga_video.webm" type="video/webm">
+            <embed src="https://www.ictiva.comhomes/video/yoga_video.mp4" type="application/x-shockwave-flash" width="100%" height="570" allowscriptaccess="always" allowfullscreen="true" autoplay="true" showcontrols="0">
         </video> -->
     </header>
     <section class="container-fluid">
         <div class="row">
             <div class="col-12 py-3 px-3 extra-lg d-md-none hidden-sm-up">
-                <p class="bg-darkgrey text-white text-uppercase font-weight-bold h4 m-0 py-3 px-4">Beneficios del Aeróbic:</p>
-                <ul class="bg-lightgrey m-auto py-3 pl-4">
-                    <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Ayuda a adelgazar.</li>
-                    <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Reduce la celulitis.</li>
-                    <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Elimina la grasa corporal.</li>
-                    <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Estiliza tu figura.</li>
-                    <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Mayor capacidad pulmonar.</li>
-                    <li class="line-height-2 ls"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Aumenta la resistencia.</li>
-                    <li class="line-height-2 ls mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Tonifica tu musculatura.</li>
+                <p class="bg-dark text-white text-uppercase font-weight-bold h4 m-0 py-4 px-4 rounded-top-lg">Beneficios del Aeróbic:</p>
+                <ul class="bg-light m-auto py-3 pl-4 rounded-bottom-lg">
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Ayuda a adelgazar.</li>
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Reduce la celulitis.</li>
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Elimina la grasa corporal.</li>
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Estiliza tu figura.</li>
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Mayor capacidad pulmonar.</li>
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Aumenta la resistencia.</li>
+                    <li class="list-unstyled h5 mb-4"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Tonifica tu musculatura.</li>
                 </ul>
-                <!-- <p class="py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/usuarios/alta/?home=gimnasio" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">Quiero entrenar gratis</a></p> -->
+                <!-- <p class="py-4 btn btn-primary rounded-xl"><a href="https://www.ictiva.com/tarifas/?home=gimnasio" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">Quiero entrenar gratis</a></p> -->
             </div>
         </div>
     </section>
     <section class="no-padding bg-faded">
-        <div class="container py-0">
+        <div class="container-fluid py-0">
             <div class="row px-5 py-4">
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-lg-3 text-center py-4">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/localizacion_icon.png" class="sr-icons mb-3" alt="Donde quieras" height="80px" width="auto">
                         <h4 class="h4">DONDE QUIERAS</h3>
                         <!-- <p class="text-muted">Acceso ilimitado donde quieras y a la hora que quieras.</p> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-lg-3 text-center py-4">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/reloj_icon.png" class="sr-icons mb-3" alt="Cuando quieras" height="80px" width="auto">
                         <h4 class="h4">CUANDO QUIERAS</h3>
                         <!-- <p class="text-muted">Clases dirigidas con ejercicios de 21 disciplinas diferentes.</p> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-lg-3 text-center py-4">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/play_icon.png" class="sr-icons mb-3" alt="Las veces que quieras" height="80px" width="auto">
                         <h4 class="h4">LAS VECES QUE QUIERAS</h3>
                         <!-- <p class="text-muted">5 niveles de dificultad para adaptarse a tu forma física.</p> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-sm-6 col-lg-3 text-center py-4">
                     <div class="mt-3">
                         <img src="homes/img/img-landing/iconos/infinito_icon.png" class="sr-icons mb-3" alt="acceso ilimitado" height="80px" width="auto">
                         <h4 class="h4">ACCESO ILIMITADO</h3>
@@ -357,10 +324,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="pagetwo" class="no-padding mb-5">
         <div class="container-fluid">
             <div class="row no-padding">
-                <div class="col-12 col-md-5 text-left no-padding embed-responsive embed-responsive-16by9 bg-grey-2">
+                <div class="col-12 col-lg-5 text-left no-padding embed-responsive embed-responsive-16by9 bg-grey-2">
                     <iframe src="https://player.vimeo.com/video/266851722?color=fcbe17&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
-                <div class="col-12 col-md-7 my-3 px-3 px-md-5">
+                <div class="col-12 col-lg-7 my-3 px-3 px-md-5">
                     <h2 class="mb-5 pt-2 text-center text-md-left text-primary">CLASES DE AERÓBIC EN CASA</h2>
                     <ul class="pr-3 pl-0">
                         <li class="mb-3 ls text-medium"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Nunca ha sido tan fácil, cómodo, sencillo y divertido ponerte en forma desde casa  gracias a las clases de aeróbic completas de ictiva. Ponte en forma al ritmo de la música!</li>
@@ -368,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li class="mb-3 ls text-medium"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Tanto si eres principiante en esta disciplina, como si tienes un nivel más avanzado tenemos clases para tí , que te ayudarán a mejorar a nivel físico, aumentando tu resistencia aeróbica  y tonificando toda tu musculatura.</li>
                         <li class="mb-3 ls text-medium"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Empieza hoy mismo a realizar nuestras clases de aeróbic completas y en pocas semanas verás los resultados. Únete a ictiva, tu gimnasio online y pásate a un estilo de vida más saludable.</li>
                     </ul>
-                    <p class="mt-4 py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="d-flex d-lg-inline justify-content-center justify-content-lg-start mt-5"><a href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="btn btn-primary rounded-xl py-3 px-5 mx-4 mx-lg-0 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
             </div>
         </div>
@@ -376,17 +343,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="no-padding mb-5">
         <div class="container-fluid">
             <div class="row d-flex flex-row-reverse no-padding">
-                <div class="col-12 col-md-5 text-right no-padding bg-grey-2 d-flex align-items-center">
+                <div class="col-12 col-lg-5 text-right no-padding bg-grey-2 d-flex align-items-center">
                     <div><img src="homes/img/land-aerobic/aerobic-en-casa-web.jpg" class="img-fluid" alt="clases de aerobic en casa"></div>
                 </div>
-                <div class="col-12 col-md-7 my-3 px-3 px-md-5">
+                <div class="col-12 col-lg-7 my-3 px-3 px-md-5">
                     <h2 class="mb-5 pt-2 text-center text-md-left text-primary"><a href="https://www.ictiva.com/ejercicios-en-casa/videos-aerobic/" target="_blank" class="text-primary">VIDEOS DE AERÓBIC</a> PARA HACER ONLINE</h2>
                     <ul class="pl-0">
                         <li class="mb-3 ls text-medium"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Nuestras vídeosesiones constan de 3 niveles: Básico, medio y avanzado. Con una duración que va de los 20 a los 35 minutos, en las que a través de diferentes vídeos nuestra monitora Raquel Talavera,  te guiará paso a paso en las diferentes fases de desarrollo de las clases de aeróbic online: calentamiento, fase principal (ejercicios aeróbicos y tonificación), y por último vuelta a la calma (Bajada de pulsaciones y estiramientos).</li>
                         <li class="mb-3 ls text-medium"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>Con nuestras videosesiones para hacer en casa irás mejorando en la práctica de esta disciplina a medida que vayas avanzando y asimilando nuevos pasos. Es importante repetir las videosesiones varias veces con el fin de asimilar bien los pasos y ganar una forma física óptima.</li>
                         <li class="mb-3 ls text-medium"><i class="fas fa-dot-circle fa-sm text-primary mr-3"></i>A qué esperas a empezar con nuestras clases de aeróbic para principiantes? Quema calorías y ponte en forma desde casa mientras te diviertes bailando al ritmo de la música.</li>
                     </ul>
-                    <p class="mt-4 py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="d-flex d-lg-inline justify-content-center justify-content-lg-start mt-5"><a href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="btn btn-primary rounded-xl py-3 px-5 mx-4 mx-lg-0 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
             </div>
         </div>
@@ -394,16 +361,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="no-padding mb-5">
         <div class="container-fluid">
             <div class="row no-padding">
-                <div class="col-12 col-md-5 text-right no-padding bg-grey-2 d-flex align-items-center">
+                <div class="col-12 col-lg-5 text-right no-padding bg-grey-2 d-flex align-items-center">
                     <div><img src="homes/img/land-aerobic/aerobic-web.jpg" class="img-fluid" alt="clases de ejercicios aeróbicos"></div>
                 </div>
-                <div class="col-12 col-md-7 my-3 px-3 px-md-5">
+                <div class="col-12 col-lg-7 my-3 px-3 px-md-5">
                     <h2 class="mb-5 pt-2 text-center text-md-left text-primary"><a href="https://www.ictiva.com/ejercicios-aerobic/" target="_blank" class="text-primary">EJERCICIOS DE AERÓBIC</a> EN CASA </h2>
                     <p class="mb-3 ls text-medium">Las primeras clases de aeróbic para principiantes constan de sesiones de ejercicios cardiovascular de bajo impacto, diferentes pasos rítmicos (marcha, v, paso lado a lado) enlazados entre sí, dirigidos básicamente a trabajar el tren inferior, sin olvidar el tren superior.</p>
                     <p class="mb-3 ls text-medium">En las clases de aeróbic online más avanzadas trabajarás mucho más la coordinación y la resistencia y aprenderás ejercicios de aeróbic de mayor dificultad como el Mambo, el Lounge o el Grapvine.</p>
                     <p class="mb-3 ls text-medium">Fácil y sencillo. Solo tienes que darle al play de la sesión que elijas  y seguir la clase con nuestra monitora, como si de una sesión presencial se tratara. Es estar como en un gimnasio, pero estando en la comodidad de tu hogar.</p>
                     <p class="mb-3 ls text-medium">Practicando todos estos ejercicios día a día, en pocas semanas ganarás resistencia, mejorarás a nivel cardiovascular, perderás peso, eliminarás celulitis y te sentirás mucho mejor gracias a la actividad física realizada. Recuerda que la práctica asidua del deporte te dará salud y bienestar!</p>
-                    <p class="mt-4 py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="d-flex d-lg-inline justify-content-center justify-content-lg-start mt-5"><a href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="btn btn-primary rounded-xl py-3 px-5 mx-4 mx-lg-0 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
             </div>
         </div>
@@ -411,18 +378,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="no-padding mb-5">
         <div class="container-fluid">
             <div class="row d-flex flex-row-reverse no-padding">
-                <div class="col-12 col-md-5 text-right no-padding d-flex align-items-center">
+                <div class="col-12 col-lg-5 text-right no-padding d-flex align-items-center">
                     <div><img src="homes/img/img-landing/ictiva-mockup.png" class="img-fluid" alt="la App de ictiva"></div>
 
                 </div>
-                <div class="col-12 col-md-7 my-3 px-3 px-md-5">
+                <div class="col-12 col-lg-7 my-3 px-3 px-md-5">
                     <h2 class="mb-5 pt-2 text-center text-md-left text-primary">LA APLICACIÓN DE ICTIVA</h2>
                     <p class="mb-3 ls text-medium">Gracias a la <a href="https://play.google.com/store/apps/details?id=ictiva.carbonbyte.com.ictiva" target="_blank" class="text-primary">app de aerobic en casa</a> de ictiva, podrás llevarte tu entrenamiento allí donde quieras: En la intimidad de tu habitación, en un Hotel, o de viaje. Tu eliges, el mejor momento del día y nosotros te ponemos la sesión.</p>
                     <p class="mb-3 ls text-medium">Iniciarse en la práctica de esta disciplina aeróbica nunca ha sido tan fácil y sencillo. Realiza dos sesiones completas totalmente gratis!</p>
                     <p class="mb-3 ls text-medium">Pero la aplicación de ictiva no solo te permite realizar esta disciplina, sino que tienes muchas otras más que pueden complementar tus sesiones, como puede ser el Step, ejercicios de Fitness, Combat, entrenamientos de alta intensidad y otras muchas más disciplinas! Descúbrelas.</p>
                     <p class="mb-3 ls text-medium">La app de ictiva, gracias a su variedad de disciplinas (25) y sus más de 800 videosesiones, y diversas rutinas de entrenamiento con planes nutricionales incluidos, hace de ella la aplicación de salud y bienestar más completa del mercado.</p>
                     <p class="mb-3 ls text-medium">A qué esperas a descargártela? Tienes más de 50 clases gratis a tu disposición!</p>
-                    <p class="mt-4 py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="d-flex d-lg-inline justify-content-center justify-content-lg-start mt-5"><a href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="btn btn-primary rounded-xl py-3 px-5 mx-4 mx-lg-0 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
             </div>
         </div>
@@ -430,16 +397,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="no-padding mb-5">
         <div class="container-fluid">
             <div class="row no-padding">
-                <div class="col-12 col-md-5 text-left no-padding embed-responsive embed-responsive-16by9 bg-grey-2">                                 
+                <div class="col-12 col-lg-5 text-left no-padding embed-responsive embed-responsive-16by9 bg-grey-2">                                 
                     <iframe frameborder="0" height="360" src="https://player.vimeo.com/video/160867073?color=fcbe17&title=0&byline=0&portrait=0" width="480"></iframe>
                 </div>
-                <div class="col-12 col-md-7 my-3 px-3 px-md-5">
+                <div class="col-12 col-lg-7 my-3 px-3 px-md-5">
                     <h2 class="mb-5 pt-2 text-center text-md-left text-primary">NUESTRA MONITORA</h2>
                     <p class="mb-3 ls text-medium">Raquel Talavera es la monitora que te introducirá en la práctica de esta modalidad deportiva. Tiene a sus espaldas una gran experiencia de varios años como  instructora de esta disciplina deportiva. además de estar Licenciada en Ciencias de la Actividad Física y el Deporte. Actualmente sigue en activo impartiendo cursos en diferentes centros deportivos como especialista en esta modalidad.</p>
                     <p class="mb-3 ls text-medium">Gracias al bagaje y experiencia, nuestra monitora te guiará en  todas las sesiones virtuales. Como si se tratara de una clase presencial, te sentirás acompañad@ en todo momento, donde te explicará paso a paso cómo realizar los diferentes ejercicios.</p>
                     <p class="mb-3 ls text-medium">Con nuestra Monitora Raquel Talavera realizar nuestras sesiones te será muy sencillo y cómodo. Desarrollarás capacidad de coordinación, armonía corporal, y  ganarás flexibilidad y resistencia física.</p>
                     <p class="mb-3 ls text-medium">Únete a nuestra comunidad y síguenos a través de las Redes Sociales.</p>
-                    <p class="py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="d-flex d-lg-inline justify-content-center justify-content-lg-start mt-5"><a href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="btn btn-primary rounded-xl py-3 px-5 mx-4 mx-lg-0 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
             </div>
         </div>
@@ -447,17 +414,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="no-padding mb-5">
         <div class="container-fluid">
             <div class="row d-flex flex-row-reverse no-padding">
-                <div class="col-12 col-md-5 text-right no-padding bg-grey-2 d-flex align-items-center">
+                <div class="col-12 col-lg-5 text-right no-padding bg-grey-2 d-flex align-items-center">
                     <div><img src="homes/img/land-aerobic/aerobic-2_web.jpg" class="img-fluid" alt="clases de aerobic"></div>
                 </div>
-                <div class="col-12 col-md-7 my-3 px-3 px-md-5">
+                <div class="col-12 col-lg-7 my-3 px-3 px-md-5">
                     <h2 class="mb-5 pt-2 text-center text-md-left text-primary">RECOMENDACIONES</h2>
                     <p class="mb-3 ls text-medium">Antes de empezar con la actividad física de forma asidua, te recomendamos acudir al médico para que te haga un buen chequeo. Él es el mejor profesional para indicarte qué tipo de actividad física es la más adecuada para ti. </p>
                     <p class="mb-3 ls text-medium">Te recomendamos que empieces de forma gradual. El uso y seguimiento de las instrucciones que te damos en estos vídeos serán siempre bajo tu propia responsabilidad.</p>
                     <p class="mb-3 ls text-medium">Conserva un nivel de hidratación adecuado en función del ejercicio físico y de la temperatura ambiente en la que estés practicando dicha actividad.</p>
                     <p class="mb-3 ls text-medium">Para alcanzar unos resultados óptimos tienes que ser constante con tu rutina de entrenamiento. Aconsejando que al menos hagas ejercicio tres veces por semana como mínimo.</p>
                     <p class="mb-3 ls text-medium">El cálculo de la quema  calorias que encontrarás en cada sesión corresponde a una media aproximada. Ictiva no se hace responsable del uso inadecuado de nuestra plataforma y no garantiza su resultado, ya que éste depende de mucho factores (genéticos, nutricionales, de la duración de la actividad física y de la constancia de la misma, aparte de otros factores)</p>
-                    <p class="py-4 btn bg-primary rounded-0"><a href="https://www.ictiva.com/tarifas/" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">AHORA 3 MESES x 15€</a></p>
+                    <p class="d-flex d-lg-inline justify-content-center justify-content-lg-start mt-5"><a href="https://www.ictiva.com/usuarios/alta/?utm_source=blog&utm_medium=referral" class="btn btn-primary rounded-xl py-3 px-5 mx-4 mx-lg-0 h5">PRUEBA GRATIS ICTIVA</a></p>
                 </div>
             </div>
         </div>
@@ -466,143 +433,118 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container-fluid banner-primary">
             <div class="row py-3 text-white">
                 <div class="col-lg-12 text-center">
-                    <p class="text-bigger p-3"><a href="https://www.ictiva.com/usuarios/alta/?home=gimnasio" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">Quiero entrenar gratis</a></p>
+                    <p class="text-bigger p-3"><a href="https://www.ictiva.com/tarifas/?home=gimnasio" class="text-uppercase text-white text-center m-0 py-4 px-4 h5">Quiero entrenar gratis</a></p>
                 </div>
             </div>
         </div>
     </section> -->
 
 
-    <section class="text-white bg-dark p-5 footer-list">
+    <section class="page-section bg-dark" id="prefooter">
         <div class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="col-12 col-sm-4 col-md-2 p-0">
-                    <h5 class="text-uppercase font-weight-bold">Acerca de</h5>
-                    <hr>
-                    <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/gimnasia-en-casa/">¿Qué es ictiva?</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="#">Servicios</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/nuestro-equipo/">Nuestro equipo</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/tarifas/">Tarifas</a></li>
-                    </ul>
-                </div>        
-                <div class="col-12 col-sm-4 col-md-2 p-0 mt-4 mt-sm-0">
-                    <h5 class="text-uppercase font-weight-bold">Ayuda</h5>
-                    <hr>
-                    <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/faq/">FAQ</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/requisitos-tecnicos/">Requesitos Técnicos</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/blog/">Blog</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/contacto-gym/">Contacto</a></li>
+            <div class="row justify-content-around text-white px-5">
+                <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+                    <img src="/homes/src/assets/img/logo-ictiva-new-light.svg" width="120" height="auto" class="img-fluid" alt="logo ictiva">
+                </div>
+                <div class="col-12 col-lg-2 mb-5 mb-lg-0">
+                    <ul class="showcase">
+                        <h4 class="text-white font-weight-bold">AYUDA</h4>
+                        <li><a href="https://www.ictiva.com/tarifas/">Tarifas</a></li>
+                        <li><a href="https://www.ictiva.com/faq/">Faq´s</a></li>
+                        <li><a href="https://www.ictiva.com/contacto-gym/">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-4 col-md-2 p-0 mt-4 mt-sm-0">
-                    <h5 class="text-uppercase font-weight-bold">Compañía</h5>
-                    <hr>
-                    <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/programa-afiliacion/">Programa de afiliación</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/publicidad/">Publicidad</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="#">ictiva en los medios</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="http://www.ictivawork.com/">ictiva para empresas</a></li>
+                <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+                    <ul class="showcase">
+                        <h4 class="text-white font-weight-bold">LEGAL</h4>
+                        <li><a href="https://www.ictiva.com/nota-legal/">Nota legal</a></li>
+                        <li><a href="https://www.ictiva.com/condiciones-de-uso/">Condiciones de uso</a></li>
+                        <li><a href="https://www.ictiva.com/politica-de-privacidad-y-cookies/">Política de privacidad y cookies</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-6 col-md-2 p-0 mt-4 mt-md-0">
-                    <h5 class="text-uppercase font-weight-bold">Legal</h5>
-                    <hr>
-                    <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/nota-legal/">Nota legal</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/condiciones-de-uso/">Condiciones de uso</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/condiciones-de-compra/">Condiciones de compra</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/politica-de-privacidad-y-cookies/">Politica de privacidad y cookies</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-2 p-0 mt-4 mt-md-0">
-                    <h5 class="text-uppercase font-weight-bold">Social Media</h5>
-                    <hr>
-                    <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.facebook.com/ictivatugimnasioencasa/" target="_blank">Facebook</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://twitter.com/ictiva" target="_blank">Twitter</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.youtube.com/user/ictiva" target="_blank">YouTube</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.instagram.com/ictiva/" target="_blank">Instagram</a></li>
+                <div class="col-12 col-lg-2">
+                    <ul class="showcase">
+                        <h4 class="text-white font-weight-bold">SOCIAL</h4>
+                        <li><a href="https://www.facebook.com/ictivatugimnasioencasa/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/ictiva/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/user/ictiva">Youtube</a></li>
                     </ul>
                 </div>
             </div>
-
-            
         </div>
     </section>
-    <section class="no-padding footer-list bg-footer2">
+    <section class="no-padding footer-list bg-footer2 d-none d-lg-block">
         <div class="container-fluid px-5 pt-5 pb-0">
             <div class="row">
                 <div class="col-12 col-lg-7 px-0 pt-0 pb-5">
-                    <h5 class="text-uppercase font-weight-bold font-weight-bold">Salas de ejercicio</h5>
+                    <h6 class="text-uppercase font-weight-bold font-weight-bold">Salas de ejercicio</h6>
                     <hr style="border-color:#333333;">
                     <div class="container-fluid pl-0 pr-5">
                         <div class="row">
                             <div class="col-12 col-sm-3">
                                 <ul class="pl-0">
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-aerobic/">Aerobic</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-yoga/">Yoga</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-pilates/">Pilates</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-hipopresivos/">Hipopresivos</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-de-abdominales/">Abdominales</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/tbc/">TBC</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-aerobic/">Aerobic</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-yoga/">Yoga</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-pilates/">Pilates</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-hipopresivos/">Hipopresivos</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-de-abdominales/">Abdominales</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/tbc/">TBC</a></li>
                                 </ul>
                             </div>
                             <div class="col-12 col-sm-3">
                                 <ul class="pl-0">                            
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/cuerpo-perfecto/">Cuerpo Perfecto</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-fitness/">Fitness</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/hiit/">Hiit</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/entrenamiento-boxeo/">Boxeo</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/combat/">Combat</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-steps/">Steps</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/cuerpo-perfecto/">Cuerpo Perfecto</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-fitness/">Fitness</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/hiit/">Hiit</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/entrenamiento-boxeo/">Boxeo</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/combat/">Combat</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-steps/">Steps</a></li>
                                 </ul>
                             </div>
                             <div class="col-12 col-sm-3">
                                 <ul class="pl-0">
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/fitness-girl">Fitness Girl</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-de-crossfit/">CrossFitness</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/tabata">Tabata</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/tds">Trainer Door System</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dance/">Dance</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-gimnasia-mayores/">Gimnasia para Mayores</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/fitness-girl">Fitness Girl</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-de-crossfit/">CrossFitness</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/tabata">Tabata</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/tds">Trainer Door System</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/dance/">Dance</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-gimnasia-mayores/">Gimnasia para Mayores</a></li>
                                 </ul>
                             </div>
                             <div class="col-12 col-sm-3">
                                 <ul class="pl-0">
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ciclo-indoor/">Ciclo In</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/danza-vientre/">Danza del Vientre</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/ejercicios-espalda/">Espalda Sana</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/estiramientos-y-relajacion/">Estiramientos y Relajación</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="#">Mamás, Bebés y Niños</a></li>
-                                    <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/workout-ejercicios/">Workout</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ciclo-indoor/">Ciclo In</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/danza-vientre/">Danza del Vientre</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/ejercicios-espalda/">Espalda Sana</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/estiramientos-y-relajacion/">Estiramientos y Relajación</a></li>
+                                    <li class="footer-list-item"><a href="#">Mamás, Bebés y Niños</a></li>
+                                    <li class="footer-list-item"><a href="https://www.ictiva.com/workout-ejercicios/">Workout</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 px-0 pt-0 pb-5">
-                    <h5 class="text-uppercase font-weight-bold font-weight-bold mt-3 mt-md-0">Planes de Entrenamiento</h5>
+                    <h6 class="text-uppercase font-weight-bold font-weight-bold mt-3 mt-md-0">Planes de Entrenamiento</h6>
                     <hr style="border-color:#333333;">
                     <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/radical-change">Radical Change</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/lose-weight">Lose Weight</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/tone-up">Tone Up</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/six-pack">Six Pack</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/wellness/">Wellness</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/radical-change">Radical Change</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/lose-weight">Lose Weight</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/tone-up">Tone Up</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/six-pack">Six Pack</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/wellness/">Wellness</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-2 px-0 pt-0 pb-5">
-                    <h5 class="text-uppercase font-weight-bold font-weight-bold mt-3 mt-md-0">Dietas</h5>
+                    <h6 class="text-uppercase font-weight-bold font-weight-bold mt-3 mt-md-0">Dietas</h6>
                     <hr style="border-color:#333333;">
                     <ul class="pl-0">
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dieta-equilibrada/">Dieta Equilibrada</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dietas-para-adelgazar/">Dieta para Adelgazar</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dieta-vientre-plano/">Dieta Vientre Plano</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dieta-para-ganar-masa-muscular/">Dieta para Muscular</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dieta-para-tonificar/">Dieta para Tonificar</a></li>
-                        <li class="footer-list-item" style="font-size:0.9rem;line-height:1.7rem;"><a href="https://www.ictiva.com/dieta-para-perder-barriga/">Dieta para abdominales</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/dieta-equilibrada/">Dieta Equilibrada</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/dietas-para-adelgazar/">Dieta para Adelgazar</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/dieta-vientre-plano/">Dieta Vientre Plano</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/dieta-para-ganar-masa-muscular/">Dieta para Muscular</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/dieta-para-tonificar/">Dieta para Tonificar</a></li>
+                        <li class="footer-list-item"><a href="https://www.ictiva.com/dieta-para-perder-barriga/">Dieta para abdominales</a></li>
                     </ul>
                 </div>
             </div>
@@ -612,7 +554,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid">
         <div class="row text-center py-4">
             <div class="col">
-                <img src="homes/img/logos-footer/CERTIFICADO_ENISA-web70.jpg" class="img-fluid sr-icons enisa-icon" width="auto" alt="certificado enisa">
+                <img src="homes/src/assets/img/CERTIFICADO_ENISA-web70.png" class="img-fluid sr-icons mx-3" width="40" height="84"  alt="certificado enisa">
                 <img src="homes/img/logos-footer/confianza-online.svg" class="img-fluid sr-icons ml-4" width="70" alt="certificado confianza online">
             </div>
         </div>
